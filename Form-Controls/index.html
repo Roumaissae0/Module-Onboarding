@@ -9,19 +9,53 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-SHIRTS SL </h1><!--Changed the name-->
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><!--The name it has to be Lara-->
+       </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><!--The email it has to be lara@gmail.com-->
+        </div>
+        <div>
+          <label for="color">Color:</label>
+          <select id="color" name="color">
+            <option value="RED">Red</option>
+            <option value="BLUE">Blue</option>
+            <option value="GREEN">Green</option>
+          </select>
+        </div>
+        <div>
+          <label for="size">Size:</label>
+          <select id="size" name="size">
+            <option value="XS">Extra Small</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+            <option value="XXL">Double Extra Large</option>
+          </select>
+        </div>
+        <button type="submit" onclick="return checkUser();">Submit</button>
+        <button type="reset">Reset</button>
       </form>
+      <script>
+function checkUser() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+
+  if (name == "Lara" && email == "lara@gmail.com")
+   {alert("Order confirmed"); return true;} 
+   else {alert("User not registered");return false;}}
+</script>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      
+      <h2>By Roumaissae Bakkali Benali</h2><!-- Name changed-->
     </footer>
   </body>
 </html>
