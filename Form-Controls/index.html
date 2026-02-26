@@ -13,33 +13,44 @@
     </header>
     <main>
       <form>
-       <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required minlength="2" /><!--The name it has to be Lara-->
-       </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><!--The email it has to be lara@gmail.com-->
-        </div>
-        <div>
-          <label for="color">Color:</label>
-          <select id="color" name="color" required>
+       <fieldset>
+         <legend>Personal Information</legend>
+
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="name" required minlength="2" /><!--The name it has to be Lara-->
+       
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" required /><!--The email it has to be lara@gmail.com-->
+
+      </fieldset>
+        <fieldset>
+         <legend> Color options </legend>
+
+           <label for="color">Color:</label>
+           <select id="color" name="color" required>
+
             <option value="RED">Red</option>
             <option value="BLUE">Blue</option>
             <option value="GREEN">Green</option>
-          </select>
-        </div>
-        <div>
+
+           </select>
+          
+        </fieldset>
+        <fieldset>
+         <legend> Sizs options </legend>
+
           <label for="size">Size:</label>
           <select id="size" name="size" required>
+
             <option value="XS">Extra Small</option>
             <option value="S">Small</option>
             <option value="M">Medium</option>
             <option value="L">Large</option>
             <option value="XL">Extra Large</option>
             <option value="XXL">Double Extra Large</option>
+
           </select>
-        </div>
+        </fieldset>
         <button type="submit" >Submit</button>
         <button type="reset">Reset</button>
       </form>
