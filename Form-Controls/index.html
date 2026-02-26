@@ -15,7 +15,7 @@
       <form>
        <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required /><!--The name it has to be Lara-->
+        <input type="text" id="name" name="name" required minlength="2" /><!--The name it has to be Lara-->
        </div>
         <div>
           <label for="email">Email:</label>
@@ -40,18 +40,10 @@
             <option value="XXL">Double Extra Large</option>
           </select>
         </div>
-        <button type="submit" onclick="return checkUser();">Submit</button>
+        <button type="submit" onclick="return checkUser(lara);">Submit</button>
         <button type="reset">Reset</button>
       </form>
-      <script>
-function checkUser() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-
-  if (name == "Lara" && email == "lara@gmail.com")
-   {alert("Order confirmed"); return true;} 
-   else {alert("User not registered");return false;}}
-</script>
+      
     </main>
     <footer>
       
