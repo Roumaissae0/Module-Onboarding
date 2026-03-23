@@ -31,6 +31,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  padding: 80px;
 }
 #Big_title {
   font-family: 'Courier New', Courier, monospace;
@@ -68,6 +69,8 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  left: 0;
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
