@@ -31,7 +31,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  padding: 80px;
+  padding-bottom: 80px;
 }
 #Big_title {
   font-family: 'Courier New', Courier, monospace;
